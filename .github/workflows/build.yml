@@ -35,9 +35,9 @@ jobs:
           bindings: geode-sdk/bindings
           bindings-ref: main
           combine: true
-          # Pinned on purpose: 'latest' fails to resolve right now (Geode v6 is in beta).
-          # GD 2.2081 -> v5.9.0   |   GD 2.2091 -> nightly (Geode v6)
-          sdk: v5.9.0
+          # Pinned on purpose: 'latest' fails to resolve right now.
+          # GD 2.2091 -> Geode v6 beta.   (For GD 2.2081 use: sdk: v5.9.0)
+          sdk: v6.0.0-beta.1
           target: ${{ matrix.config.target }}
 
   package:
